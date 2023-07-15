@@ -1,10 +1,18 @@
 import './App.css';
+import Nav from './src/components/Nav';
+import Home from './src/components/Home';
+import { Routes, Route } from 'react-dom/client';
+
 
 function App() {
   return (
-    <div className="App">
-      Nothing for now...
-    </div>
+    <>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Categories" element={<Categories />} />
+      </Routes>
+    </>
   );
 }
 

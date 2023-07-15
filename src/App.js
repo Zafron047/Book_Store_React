@@ -1,8 +1,8 @@
 import './App.css';
-import Nav from './src/components/Nav';
-import Home from './src/components/Home';
-import { Routes, Route } from 'react-dom/client';
-
+import { Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import Categories from './components/Categories';
 
 function App() {
   return (

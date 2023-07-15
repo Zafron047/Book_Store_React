@@ -1,6 +1,6 @@
 import React from 'react';
 
-const form = () => (
+const Form = () => (
   <form>
     <input type="Text" placeholder="Book title..." />
     <input type="Text" placeholder="Author Name..." />
@@ -8,4 +8,4 @@ const form = () => (
   </form>
 );
 
-export default form;
+export default Form;

@@ -1,4 +1,5 @@
 import React from 'react';
+import BookList from './BookList';
 
 const Library = () => {
   const array = [
@@ -22,12 +23,11 @@ const Library = () => {
   return (
     <ul>
       {array.map((book) => (
-        <li key={book.id}>
-          {book.title}
-          {' '}
-          by&nbsp;
-          {book.author}
-        </li>
+        <BookList
+          key={book.id}
+          title={book.title}
+          author={book.author}
+        />
       ))}
     </ul>
   );

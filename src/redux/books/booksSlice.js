@@ -13,7 +13,7 @@ const booksSlice = createSlice({
         id: action.payload.id,
         title: action.payload.title,
         author: action.payload.author,
-      },);
+      });
     },
     removeBook: (state, action) => {
       const bookIdToRemove = action.payload.id;

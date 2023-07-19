@@ -1,70 +1,167 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <br/>
+    <h1>Bookstore</h1>
+</div>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
 
-In the project directory, you can run:
+# 📗 Table of Contents
 
-### `npm start`
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- PROJECT DESCRIPTION -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 📖 Bookstore <a name="about-project"></a>
 
-### `npm test`
+**Bookstore** is an online platform where users can manage book information, including details like the author and title. The bookstore utilizes an API to facilitate the addition and removal of book data, providing users with seamless access to the information they need.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Built With <a name="built-with">React</a>
 
-### `npm run build`
+### Tech Stack <a name="tech-stack"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="">React.js</a></li>
+  </ul>
+</details>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- Features -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Key Features <a name="key-features"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **[GitFlow]**
+- **[React Router]**
+- **[React Components]**
+- **[React JSX]**
+- **[React Redux]**
 
-## Learn More
+<!-- LIVE DEMO -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Live Demo <a name="live-demo">Under construction</a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Live Demo Link](Under construction)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
+<!-- GETTING STARTED -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 💻 Getting Started <a name="getting-started"></a>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+To get a local copy up and running, follow these steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Prerequisites
+
+In order to run this project you need:
+
+### Setup
+
+Clone this repository to your desired folder:
+
+  cd my-folder
+  git clone https://github.com/Zafron047/Book_Store_React.git
+
+
+### Install
+
+Install this project with:
+
+```
+npm i
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+-Run the index.html with your preferred browser.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Run Tests
+
+You can run tests to check for linter errors by running the following commands: <br/>
+
+ - for testing css errors
+```
+npx stylelint "**/*.{css,scss}"
+```
+ - for Javascript errors
+```
+npx eslint "**/*.{js,jsx}" 
+```
 
 ### Deployment
+You can deploy this project using:
+- Free deployment services like GitHub pages.
+- Any deployment services of your choice.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- AUTHORS -->
 
-### `npm run build` fails to minify
+## 👥 Author <a name="authors"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 MD. Nohain Islam
+- GitHub: [@githubhandle](https://github.com/Zafron047)
+- Twitter: [@twitterhandle](https://https://twitter.com/NohainZ)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nohain-islam-0261b4148/)
+<br><br>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+- **[Improve the UI]**
+- **[Add Redux]**
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Zafron047/Book_Store_React/issues).
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project you can recommend to your friend, family and colleagues who want to use my services
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+
+**I would like to thank microverse for guiding and providing with all great material to do my projects**
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed.

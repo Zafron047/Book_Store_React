@@ -17,7 +17,7 @@ const Form = () => {
       setAuthor('');
       setCategory('');
     } else {
-      alert('Fill up all fields.');
+      alert('Please fill up all fields.');
     }
   };
 

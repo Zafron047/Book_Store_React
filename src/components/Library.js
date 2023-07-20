@@ -10,15 +10,10 @@ const Library = () => {
       {library.map((book) => (
         <BookList
           key={book.item_id}
-          fields={{
-            title: book.title,
-            author: book.author,
-            category: book.category,
-          }}
+          books={book}
         />
       ))}
     </ul>
-
   );
 };
 

@@ -1,22 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const BookList = ({ title, author }) => (
-  <>
+const BookList = ({ fields }) => {
+  const { title, author, category } = fields;
+  return (
     <li>
       {title}
       {' '}
       by
       {author}
       {' '}
-      &nbsp;
+      {category}
+        &nbsp;
       <button type="button">Remove</button>
     </li>
-  </>
-);
+  );
+};
 
 BookList.propTypes = {
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+  fields: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  }).isRequired,
 };
+
 export default BookList;

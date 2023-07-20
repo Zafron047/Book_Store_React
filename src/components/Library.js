@@ -1,20 +1,24 @@
 import React from 'react';
-import BookList from './BookList';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
+import BookList from './BookList';
 
 const Library = () => {
-  const library = useSelector((state) => state);
+  const library = useSelector((state) => state.books);
 
   return (
     <ul>
-      {array.map((book) => (
+      {library.map((book) => (
         <BookList
-          key={book.id}
-          title={book.title}
-          author={book.author}
+          key={book.item_id}
+          fields={{
+            title: book.title,
+            author: book.author,
+            category: book.category,
+          }}
         />
       ))}
     </ul>
+
   );
 };
 

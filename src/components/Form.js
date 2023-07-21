@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { fetchBooks, postBooks } from '../redux/books/booksSlice';
 
 const Form = () => {
   const [title, setTitle] = useState('');
@@ -8,14 +8,15 @@ const Form = () => {
   const [category, setCategory] = useState('');
   const dispatch = useDispatch();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (title && author && category) {
-      dispatch(addBook({ title, author, category }));
+      await dispatch(postBooks({ title, author, category }));
       setTitle('');
       setAuthor('');
       setCategory('');
+      await dispatch(fetchBooks());
     } else {
       alert('Please fill up all fields.');
     }

@@ -13,7 +13,6 @@ const BookList = ({ books }) => {
     <li>
       {books.title}
       {' '}
-      by
       {books.author}
       {' '}
       {books.category}

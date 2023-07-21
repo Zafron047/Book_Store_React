@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
 
 const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/Lyj8aicgwV6Srbd9nd9e/books';
 
@@ -22,7 +23,7 @@ const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
 const postBooks = createAsyncThunk('books/postBooks', async ([title, author, category]) => {
   try {
     const newBook = {
-      item_id: `Item${initialState.book.length + 1}`,
+      item_id: uuidv4(),
       title,
       author,
       category,
@@ -33,7 +34,7 @@ const postBooks = createAsyncThunk('books/postBooks', async ([title, author, cat
     return post;
   } catch (error) {
     console.error('Error posting book:', error);
-    throw error; // Rethrow the error so it's handled by the rejection case of the createAsyncThunk
+    throw error;
   }
 });
 

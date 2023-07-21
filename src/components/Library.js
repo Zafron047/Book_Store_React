@@ -5,7 +5,6 @@ import BookList from './BookList';
 
 const Library = () => {
   const { book, isLoading } = useSelector((store) => store.books);
-  // console.log(book);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -13,7 +12,6 @@ const Library = () => {
   }, [dispatch]);
 
   const apiArr = Object.keys(book).flatMap((id) => book[id].map((item) => ({ ...item, id })));
-  // console.log(apiArr);
   return (
     <section>
       {isLoading ? (

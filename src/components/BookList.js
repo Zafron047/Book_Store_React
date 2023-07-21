@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { fetchBooks, removeBook } from '../redux/books/booksSlice';
 
 const BookList = ({ books }) => {
   const dispatch = useDispatch();
-  const handleRemoveBook = () => {
-    dispatch(removeBook(books.item_id));
+  const handleRemoveBook = async () => {
+    await dispatch(removeBook(books.id));
+    await dispatch(fetchBooks());
   };
   return (
     <li>
       {books.title}
       {' '}
-      by
       {books.author}
       {' '}
       {books.category}
@@ -27,7 +27,7 @@ BookList.propTypes = {
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
-    item_id: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
   }).isRequired,
 };
 

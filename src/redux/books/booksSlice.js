@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/UDCrn87onjJjIINBwkE0/books';
+const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/Lyj8aicgwV6Srbd9nd9e/books';
 
 const initialState = {
   book: [],
@@ -9,14 +9,18 @@ const initialState = {
 };
 
 const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
-  const response = await axios.get(baseURL);
-  const fetchResponse = response.data;
-  return fetchResponse;
+  try {
+    const response = await axios.get(baseURL);
+    const fetchResponse = response.data;
+    return fetchResponse;
+  } catch (error) {
+    console.error('Error fetching books:', error);
+    throw error;
+  }
 });
 
-const postBooks = createAsyncThunk(
-  'books/postBooks',
-  async ([title, author, category]) => {
+const postBooks = createAsyncThunk('books/postBooks', async ([title, author, category]) => {
+  try {
     const newBook = {
       item_id: `Item${initialState.book.length + 1}`,
       title,
@@ -27,12 +31,21 @@ const postBooks = createAsyncThunk(
     const response = await axios.post(baseURL, newBook);
     const post = response.data;
     return post;
-  },
-);
+  } catch (error) {
+    console.error('Error posting book:', error);
+    throw error; // Rethrow the error so it's handled by the rejection case of the createAsyncThunk
+  }
+});
 
 const removeBook = createAsyncThunk('books/removeBook', async (param) => {
-  const response = await axios.delete(`${baseURL}/${param}`);
-  return response.data;
+  try {
+    const response = await axios.delete(`${baseURL}/${param}`);
+    const deleted = response.data;
+    return deleted;
+  } catch (error) {
+    console.error('Error removing book:', error);
+    throw error;
+  }
 });
 
 const booksSlice = createSlice({

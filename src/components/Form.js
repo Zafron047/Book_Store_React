@@ -12,7 +12,7 @@ const Form = () => {
     e.preventDefault();
 
     if (title && author && category) {
-      await dispatch(postBooks({ title, author, category }));
+      await dispatch(postBooks([title, author, category]));
       setTitle('');
       setAuthor('');
       setCategory('');
@@ -24,10 +24,27 @@ const Form = () => {
 
   return (
     <form>
-      <input type="Text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Book title..." />
-      <input type="Text" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author Name..." />
-      <input type="Text" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="category Name..." />
-      <button type="submit" onClick={handleSubmit}>Submit</button>
+      <input
+        type="Text"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="Book title..."
+      />
+      <input
+        type="Text"
+        value={author}
+        onChange={(e) => setAuthor(e.target.value)}
+        placeholder="Author Name..."
+      />
+      <input
+        type="Text"
+        value={category}
+        onChange={(e) => setCategory(e.target.value)}
+        placeholder="category Name..."
+      />
+      <button type="submit" onClick={handleSubmit}>
+        Submit
+      </button>
     </form>
   );
 };

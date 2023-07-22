@@ -4,9 +4,10 @@
   background-color: #fff;
   border-bottom: 1px solid #e8e8e8;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  grid-gap: 40px;
   gap: 40px;
+  width: 100%;
 }
 
 .nav-header {

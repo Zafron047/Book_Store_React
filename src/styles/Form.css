@@ -1,6 +1,10 @@
 .form-section {
   border-top: 1px solid #e8e8e8;
-  margin: 2rem 5.9rem;
+  /* padding: 0 40px; */
+  /* margin-right: 6%; */
+  /* margin-left: 3%; */
+  width: 100%;
+  /* border: 3px solid Black; */
 }
 
 .form-header {

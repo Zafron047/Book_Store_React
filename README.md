@@ -44,6 +44,7 @@
   <summary>Client</summary>
   <ul>
     <li><a href="">React.js</a></li>
+    <li><a href="">React Redux</a></li>
   </ul>
 </details>
 
@@ -63,7 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo">Under construction</a>
 
-- [Live Demo Link](Under construction)
+- Please [Click here](https://microverse-redux-book-store.onrender.com/) to see Live Demo.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -128,8 +129,7 @@ You can deploy this project using:
 - GitHub: [@githubhandle](https://github.com/Zafron047)
 - Twitter: [@twitterhandle](https://https://twitter.com/NohainZ)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nohain-islam-0261b4148/)
-<br><br>
-
+<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

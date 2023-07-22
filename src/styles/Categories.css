@@ -1,0 +1,15 @@
+.Categories {
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.child {
+  border: 20px solid rgba(137, 43, 226, 0.54);
+  height: auto;
+  font-size: 5vw;
+  color: rgb(135, 175, 235);
+  padding: 40px;
+}

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBooks } from '../redux/books/booksSlice';
 import BookList from './BookList';
+import '../styles/Library.css';
 
 const Library = () => {
   const { book, isLoading } = useSelector((store) => store.books);
@@ -13,11 +14,13 @@ const Library = () => {
 
   const apiArr = Object.keys(book).flatMap((id) => book[id].map((item) => ({ ...item, id })));
   return (
-    <section>
+    <section className="booklists-container">
       {isLoading ? (
-        <p>Loading...</p>
+        <div className="spinner">
+          <div className="spinnanimation" />
+        </div>
       ) : (
-        <ul>
+        <ul className="book-ul">
           {apiArr.map((book) => (
             <BookList key={book.item_id} books={book} />
           ))}

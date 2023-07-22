@@ -4,8 +4,8 @@ import Library from './Library';
 
 const Home = () => (
   <>
-    <Form />
     <Library />
+    <Form />
   </>
 );
 

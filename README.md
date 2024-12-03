@@ -32,7 +32,7 @@
 
 # 📖 Bookstore <a name="about-project"></a>
 
-**Bookstore** is an online platform where users can manage book information, including details like the author and title. The bookstore utilizes an API to facilitate the addition and removal of book data, providing users with seamless access to the information they need.
+**Bookstore** is a CMS where Admin can manage book information, including details like author and title. The bookstore utilizes an API to facilitate the addition and removal of book data, providing admins ease of managing contents.
 
 ## 🛠 Built With <a name="built-with">React</a>
 
